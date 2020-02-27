@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ntcc.accountservice.dao.AccountProfileMapper">
+  <resultMap id="BaseResultMap" type="com.ntcc.accountservice.entity.AccountProfile">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="USERNO" jdbcType="INTEGER" property="userno" />
+    <result column="PROFILEDOMAIN" jdbcType="INTEGER" property="profiledomain" />
+    <result column="NICKNAME" jdbcType="VARCHAR" property="nickname" />
+    <result column="REALNAME" jdbcType="VARCHAR" property="realname" />
+    <result column="PROFILESTATUS" jdbcType="INTEGER" property="profilestatus" />
+    <result column="PROFILEDESC" jdbcType="VARCHAR" property="profiledesc" />
+    <result column="CREATEDATE" jdbcType="TIMESTAMP" property="createdate" />
+    <result column="CREATEIP" jdbcType="VARCHAR" property="createip" />
+    <result column="LASTUPDATEDATE" jdbcType="TIMESTAMP" property="lastupdatedate" />
+    <result column="LASTUPDATEIP" jdbcType="VARCHAR" property="lastupdateip" />
+    <result column="LASTSIGNONDATE" jdbcType="TIMESTAMP" property="lastsignondate" />
+    <result column="LASTSIGNONIP" jdbcType="VARCHAR" property="lastsignonip" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,34 @@
+server:
+  port: 8501
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8901/eureka/
+
+spring:
+  application:
+    name: accountservice
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: ntcc
+    password: ntcc@2020
+  boot:
+    admin:
+      client:
+        url: http://localhost:8084
+  datasource:
+    druid:
+      url: jdbc:mysql://rm-bp1j1c9hp2rusl5819o.mysql.rds.aliyuncs.com:3306/account?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&useSSL=false
+      username: ntcc
+      password: ntcc@2020
+      initial-size: 1
+      min-idle: 1
+      max-active: 20
+      test-on-borrow: true
+      driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+  type-aliases-package: com.ntcc.accountservice.entity
+  mapper-locations: classpath:mapper/*.xml

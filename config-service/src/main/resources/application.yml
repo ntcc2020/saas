@@ -1,0 +1,26 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8901/eureka/
+
+server:
+  port: 8888
+
+spring:
+  application:
+    name: configservice
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/ntcc2020/ntcc-saas.git
+          searchPaths: respo
+          username: ntcc2020
+          password: ntcc@2020
+  boot:
+    admin:
+      client:
+        url: http://localhost:8084
+  zipkin:
+    base-url: http://localhost:9411
