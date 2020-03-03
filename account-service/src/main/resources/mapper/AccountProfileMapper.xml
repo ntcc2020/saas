@@ -5,17 +5,8 @@
     <!--
       WARNING - @mbg.generated
     -->
-    <id column="USERNO" jdbcType="INTEGER" property="userno" />
-    <result column="PROFILEDOMAIN" jdbcType="INTEGER" property="profiledomain" />
-    <result column="NICKNAME" jdbcType="VARCHAR" property="nickname" />
-    <result column="REALNAME" jdbcType="VARCHAR" property="realname" />
-    <result column="PROFILESTATUS" jdbcType="INTEGER" property="profilestatus" />
-    <result column="PROFILEDESC" jdbcType="VARCHAR" property="profiledesc" />
-    <result column="CREATEDATE" jdbcType="TIMESTAMP" property="createdate" />
-    <result column="CREATEIP" jdbcType="VARCHAR" property="createip" />
-    <result column="LASTUPDATEDATE" jdbcType="TIMESTAMP" property="lastupdatedate" />
-    <result column="LASTUPDATEIP" jdbcType="VARCHAR" property="lastupdateip" />
-    <result column="LASTSIGNONDATE" jdbcType="TIMESTAMP" property="lastsignondate" />
-    <result column="LASTSIGNONIP" jdbcType="VARCHAR" property="lastsignonip" />
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="phone_number" jdbcType="VARCHAR" property="phoneNumber" />
+    <result column="status" jdbcType="INTEGER" property="status" />
   </resultMap>
 </mapper>

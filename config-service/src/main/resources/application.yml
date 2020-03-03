@@ -8,13 +8,13 @@ server:
 
 spring:
   application:
-    name: configservice
+    name: config-service
   cloud:
     config:
       label: master
       server:
         git:
-          uri: https://github.com/ntcc2020/ntcc-saas.git
+          uri: https://github.com/ntcc2020/respo.git
           searchPaths: respo
           username: ntcc2020
           password: ntcc@2020

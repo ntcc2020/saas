@@ -1,5 +1,6 @@
 package com.ntcc.accountservice;
 
+import com.ntcc.accountservice.component.AccountQueueSender;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -8,12 +9,12 @@ import org.springframework.boot.test.context.SpringBootTest;
 class AccountServiceApplicationTests {
 
     @Autowired
-    private RabbitProvider rabbitProvider;
+    private AccountQueueSender accountQueueSender;
 
     @Test
     public void contextLoads() {
         for (int i = 0; i < 100; i++) {
-            rabbitProvider.send();
+            accountQueueSender.send("");
         }
     }
 

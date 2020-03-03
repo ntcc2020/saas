@@ -8,12 +8,15 @@
     <version>0.0.1-SNAPSHOT</version>
     <modules>
         <module>eureka-service</module>
+        <module>config-service</module>
+        <module>zuul-service</module>
         <module>account-service</module>
         <module>account-web</module>
-        <module>zuul-service</module>
-        <module>config-service</module>
+        <module>stats-service</module>
+        <module>stats-web</module>
         <module>zipkin-service</module>
         <module>cloud-admin-service</module>
+        <module>saas-common</module>
     </modules>
 
     <packaging>pom</packaging>

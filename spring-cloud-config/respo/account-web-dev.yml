@@ -4,11 +4,11 @@ eureka:
       defaultZone: http://localhost:8901/eureka/
 
 server:
-  port: 8101
+  port: 8151
 
 spring:
   application:
-    name: accountweb
+    name: account-web
   thymeleaf:
     mode: LEGACYHTML5
     encoding: UTF-8
@@ -20,6 +20,23 @@ spring:
     admin:
       client:
         url: http://localhost:8084
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    timeout: 5000
+    database: 0
+    password: ntcc@2020
+    jedis:
+      pool:
+        max-active: 100
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+
 feign:
   hystrix:
+    enabled: true
+
+ribbon:
+  eureka:
     enabled: true

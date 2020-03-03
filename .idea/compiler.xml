@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="account-service" />
+        <module name="zipkin-service" />
+        <module name="stats-web" />
+        <module name="stats-service" />
+        <module name="config-service" />
+        <module name="eureka-service" />
+        <module name="cloud-admin-service" />
+        <module name="account-web" />
+        <module name="zuul-service" />
+        <module name="saas-common" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="account-service" target="1.8" />
+      <module name="account-web" target="1.8" />
+      <module name="account-web (1)" target="1.8" />
+      <module name="cloud-admin-service" target="1.8" />
+      <module name="config-service" target="1.8" />
+      <module name="eureka-service" target="1.8" />
+      <module name="saas" target="1.8" />
+      <module name="saas-common" target="1.8" />
+      <module name="stats-service" target="1.8" />
+      <module name="stats-web" target="1.8" />
+      <module name="zipkin-service" target="1.8" />
+      <module name="zuul-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="saas-common" options="" />
+    </option>
+  </component>
+</project>

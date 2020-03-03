@@ -5,6 +5,14 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
+/**
+ * CloudAdminServiceApplication
+ * cloud admin服务 boot类
+ *
+ * @author zhongwenhao
+ * @date 2020/3/2
+ */
+
 @SpringBootApplication
 @EnableEurekaClient
 @EnableAdminServer

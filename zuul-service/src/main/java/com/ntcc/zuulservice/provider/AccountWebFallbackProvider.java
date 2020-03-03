@@ -14,11 +14,19 @@ import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * AccountWebFallbackProvider
+ * 网关访问accountweb失败的回调
+ *
+ * @author zhongwenhao
+ * @date 2020/3/2
+ */
+
 @Component
 public class AccountWebFallbackProvider implements FallbackProvider {
     @Override
     public String getRoute() {
-        return "accountweb";
+        return "account-web";
     }
 
     @Override

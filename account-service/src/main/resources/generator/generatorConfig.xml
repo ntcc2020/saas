@@ -31,15 +31,8 @@
                 targetProject="src/main/java"
                 type="XMLMAPPER"/>
 
-        <table tableName="account_auth" domainObjectName="AccountAuth" enableCountByExample="false" enableDeleteByExample="false"
-               enableSelectByExample="false" enableUpdateByExample="false">
-            <property name="ignoreQualifiersAtRuntime" value="false"/>
-            <generatedKey column="AUTHNO" sqlStatement="select nextval('seq_account_auth');"/>
-        </table>
-        <table tableName="account_profile" domainObjectName="AccountProfile" enableCountByExample="false" enableDeleteByExample="false"
-               enableSelectByExample="false" enableUpdateByExample="false">
-            <property name="ignoreQualifiersAtRuntime" value="false"/>
-            <generatedKey column="USERNO" sqlStatement="select nextval('seq_account_profile');" identity="true"/>
+        <table tableName="%">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
         </table>
     </context>
 </generatorConfiguration>

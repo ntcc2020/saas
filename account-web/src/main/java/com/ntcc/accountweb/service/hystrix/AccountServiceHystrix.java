@@ -1,18 +1,44 @@
 package com.ntcc.accountweb.service.hystrix;
 
-import com.ntcc.accountweb.service.AccountWeb;
+import com.ntcc.accountweb.service.AccountServiceRemote;
+import com.ntcc.saascommon.model.account.ModelProfile;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.RequestParam;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * AccountServiceHystrix
+ * account服务 熔断器
+ *
+ * @author zhongwenhao
+ * @date 2020/3/2
+ */
 
 @Component
-public class AccountServiceHystrix implements AccountWeb {
+public class AccountServiceHystrix implements AccountServiceRemote {
     @Override
-    public String register(String message){
-        return String.format("Register error", message);
+    public int register(String phoneNum) {
+        return 0;
     }
 
     @Override
-    public String queryUser(@RequestParam(value = "pageNum") int pageNum, @RequestParam(value = "pageSize") int pageSize){
-        return String.format("QueryUser error", pageNum, pageSize);
+    public List<ModelProfile> queryProfileList(int pageNum, int pageSize) {
+        return new ArrayList<>();
+    }
+
+    @Override
+    public ModelProfile getProfileWithAuthLog(long userId) {
+        return new ModelProfile();
+    }
+
+    @Override
+    public int authIdentity(long userId, String name, int certificateType, String certificateNo) {
+        return 0;
+    }
+
+    @Override
+    public int auditIdentity(long userId, long accountAuthLogId) {
+        return 0;
     }
 }

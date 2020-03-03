@@ -4,11 +4,11 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://eurekaservice.phoenix.local:8901/eureka/
+      defaultZone: http://localhost:8901/eureka/
 
 spring:
   application:
-    name: zuulservice
+    name: zuul-service
   boot:
     admin:
       client:
@@ -20,4 +20,7 @@ zuul:
   routes:
     api-account:
       path: /api/account/**
-      serviceId: accountweb
+      serviceId: account-web
+    api-stats:
+      path: /api/stats/**
+      serviceId: stats-web

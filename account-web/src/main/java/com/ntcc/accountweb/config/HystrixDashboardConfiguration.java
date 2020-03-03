@@ -5,6 +5,14 @@ import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * HystrixDashboardConfiguration
+ * account服务 熔断器监控dashboard
+ *
+ * @author zhongwenhao
+ * @date 2020/3/2
+ */
+
 @Configuration
 public class HystrixDashboardConfiguration {
     @Bean
