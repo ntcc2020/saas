@@ -21,7 +21,7 @@ spring:
       client:
         url: http://localhost:8084
   redis:
-    host: 127.0.0.1
+    host: 47.114.165.181
     port: 6379
     timeout: 5000
     database: 0
