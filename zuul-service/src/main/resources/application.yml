@@ -26,4 +26,4 @@ zuul:
       serviceId: stats-web
     api-record:
       path: /api/record/**
-      serviceId: record-web111
+      serviceId: record-web
