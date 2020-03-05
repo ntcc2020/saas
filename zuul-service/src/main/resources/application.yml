@@ -28,5 +28,5 @@ zuul:
       path: /api/record/**
       serviceId: record-web
     api-user:
-      path: /api/user/**1
+      path: /api/user/**
       serviceId: user-web
