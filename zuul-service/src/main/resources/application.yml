@@ -24,3 +24,6 @@ zuul:
     api-stats:
       path: /api/stats/**
       serviceId: stats-web
+    api-record:
+      path: /api/record/**
+      serviceId: record-web
