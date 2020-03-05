@@ -1,0 +1,5 @@
+com/ntcc/saascommon/util/StringUtil.class
+com/ntcc/saascommon/model/account/ModelProfile.class
+com/ntcc/saascommon/util/JsonBinder.class
+com/ntcc/saascommon/model/account/ModelAuthLog.class
+com/ntcc/saascommon/model/ModelJsonResult.class

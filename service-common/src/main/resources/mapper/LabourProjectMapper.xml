@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ntcc.servicecommon.dao.LabourProjectMapper">
+  <resultMap id="BaseResultMap" type="com.ntcc.servicecommon.entity.LabourProject">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="Id" jdbcType="BIGINT" property="id" />
+    <result column="ProjectId" jdbcType="BIGINT" property="projectid" />
+    <result column="LabourCompanyID" jdbcType="BIGINT" property="labourcompanyid" />
+    <result column="WagePaymentType" jdbcType="TINYINT" property="wagepaymenttype" />
+    <result column="isProfessional" jdbcType="TINYINT" property="isprofessional" />
+  </resultMap>
+</mapper>

@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/eureka-service/eureka-service.iml" filepath="$PROJECT_DIR$/eureka-service/eureka-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/saas.iml" filepath="$PROJECT_DIR$/saas.iml" />
       <module fileurl="file://$PROJECT_DIR$/saas-common/saas-common.iml" filepath="$PROJECT_DIR$/saas-common/saas-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-common/service-common.iml" filepath="$PROJECT_DIR$/service-common/service-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/stats-service/stats-service.iml" filepath="$PROJECT_DIR$/stats-service/stats-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/stats-web/stats-web.iml" filepath="$PROJECT_DIR$/stats-web/stats-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/zipkin-service/zipkin-service.iml" filepath="$PROJECT_DIR$/zipkin-service/zipkin-service.iml" />
