@@ -15,7 +15,7 @@ import tk.mybatis.spring.annotation.MapperScan;
 
 @SpringBootApplication
 @EnableEurekaClient
-@MapperScan(basePackages = "com.ntcc.accountservice.dao")
+@MapperScan(basePackages = "com.ntcc.servicecommon.dao")
 public class AccountServiceApplication {
 
     public static void main(String[] args) {

@@ -1,7 +1,7 @@
 package com.ntcc.accountweb.service.hystrix;
 
 import com.ntcc.accountweb.service.AccountServiceRemote;
-import com.ntcc.saascommon.model.account.ModelProfile;
+import com.ntcc.saascommon.model.account.ModelUser;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -23,13 +23,13 @@ public class AccountServiceHystrix implements AccountServiceRemote {
     }
 
     @Override
-    public List<ModelProfile> queryProfileList(int pageNum, int pageSize) {
+    public List<ModelUser> queryProfileList(int pageNum, int pageSize) {
         return new ArrayList<>();
     }
 
     @Override
-    public ModelProfile getProfileWithAuthLog(long userId) {
-        return new ModelProfile();
+    public ModelUser getProfileWithAuthLog(long userId) {
+        return new ModelUser();
     }
 
     @Override

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ntcc.servicecommon.dao.UserSalaryTplMapper">
+  <resultMap id="BaseResultMap" type="com.ntcc.servicecommon.entity.UserSalaryTpl">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="company_id" jdbcType="BIGINT" property="companyId" />
+    <result column="project_id" jdbcType="BIGINT" property="projectId" />
+    <result column="leader_id" jdbcType="BIGINT" property="leaderId" />
+    <result column="staff_id" jdbcType="BIGINT" property="staffId" />
+    <result column="titile" jdbcType="TINYINT" property="titile" />
+    <result column="position" jdbcType="TINYINT" property="position" />
+    <result column="work_type" jdbcType="TINYINT" property="workType" />
+    <result column="work_level" jdbcType="TINYINT" property="workLevel" />
+    <result column="type" jdbcType="TINYINT" property="type" />
+    <result column="begin_date" jdbcType="DATE" property="beginDate" />
+    <result column="end_date" jdbcType="DATE" property="endDate" />
+    <result column="salary_type" jdbcType="TINYINT" property="salaryType" />
+    <result column="salary_money" jdbcType="DECIMAL" property="salaryMoney" />
+    <result column="hour_per_day" jdbcType="TINYINT" property="hourPerDay" />
+    <result column="status" jdbcType="TINYINT" property="status" />
+    <result column="is_delete" jdbcType="TINYINT" property="isDelete" />
+    <result column="created_by" jdbcType="BIGINT" property="createdBy" />
+    <result column="created_time" jdbcType="TIMESTAMP" property="createdTime" />
+    <result column="updated_by" jdbcType="BIGINT" property="updatedBy" />
+    <result column="updated_time" jdbcType="TIMESTAMP" property="updatedTime" />
+  </resultMap>
+</mapper>

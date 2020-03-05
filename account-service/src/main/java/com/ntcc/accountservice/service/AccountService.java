@@ -1,7 +1,6 @@
 package com.ntcc.accountservice.service;
 
-import com.ntcc.saascommon.model.account.ModelAuthLog;
-import com.ntcc.saascommon.model.account.ModelProfile;
+import com.ntcc.saascommon.model.account.ModelUser;
 
 import java.util.List;
 
@@ -16,11 +15,5 @@ import java.util.List;
 public interface AccountService {
     public int register(String phoneNum);
 
-    public List<ModelProfile> queryProfileList(int pageNum, int pageSize);
-
-    public ModelProfile selectByPrimaryKeyWithAuthLog(long userId);
-
-    public int authIdentity(ModelAuthLog modelAuthLog);
-
-    public int auditIdentity(long userId, long accountAuthLogId);
+    public List<ModelUser> queryProfileList(int pageNum, int pageSize);
 }

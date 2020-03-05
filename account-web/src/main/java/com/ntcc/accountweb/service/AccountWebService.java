@@ -1,7 +1,7 @@
 package com.ntcc.accountweb.service;
 
 import com.ntcc.accountweb.model.ProfileSession;
-import com.ntcc.saascommon.model.account.ModelProfile;
+import com.ntcc.saascommon.model.account.ModelUser;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.EnableCaching;
@@ -52,13 +52,13 @@ public class AccountWebService implements Serializable {
     }
 
     //
-    public List<ModelProfile> queryProfileList(int pageNum, int pageSize) {
+    public List<ModelUser> queryProfileList(int pageNum, int pageSize) {
         log.info("AccountWebService queryProfileList ", pageNum, pageSize);
 
         return accountServiceRemote.queryProfileList(pageNum, pageSize);
     }
 
-    public ModelProfile getProfileWithAuthLog(@RequestParam(value = "userId") long userId) {
+    public ModelUser getProfileWithAuthLog(@RequestParam(value = "userId") long userId) {
         log.info("AccountWebService getProfileWithAuthLog ", userId);
 
         return accountServiceRemote.getProfileWithAuthLog(userId);

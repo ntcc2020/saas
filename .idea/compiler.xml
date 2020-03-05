@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cloud-admin-service" />
         <module name="account-service" />
         <module name="zuul-service" />
         <module name="zipkin-service" />
@@ -16,24 +17,23 @@
         <module name="eureka-service" />
         <module name="stats-web" />
         <module name="account-web" />
-        <module name="cloud-admin-service" />
         <module name="saas-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="account-service" target="1.5" />
-      <module name="account-web" target="1.5" />
+      <module name="account-service" target="1.8" />
+      <module name="account-web" target="1.8" />
       <module name="account-web (1)" target="1.8" />
-      <module name="cloud-admin-service" target="1.5" />
-      <module name="config-service" target="1.5" />
-      <module name="eureka-service" target="1.5" />
-      <module name="saas" target="1.5" />
-      <module name="saas-common" target="1.5" />
+      <module name="cloud-admin-service" target="1.8" />
+      <module name="config-service" target="1.8" />
+      <module name="eureka-service" target="1.8" />
+      <module name="saas" target="1.8" />
+      <module name="saas-common" target="1.8" />
       <module name="service-common" target="1.8" />
-      <module name="stats-service" target="1.5" />
-      <module name="stats-web" target="1.5" />
-      <module name="zipkin-service" target="1.5" />
-      <module name="zuul-service" target="1.5" />
+      <module name="stats-service" target="1.8" />
+      <module name="stats-web" target="1.8" />
+      <module name="zipkin-service" target="1.8" />
+      <module name="zuul-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

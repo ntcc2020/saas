@@ -1,7 +1,7 @@
 package com.ntcc.accountweb.service;
 
 import com.ntcc.accountweb.service.hystrix.AccountServiceHystrix;
-import com.ntcc.saascommon.model.account.ModelProfile;
+import com.ntcc.saascommon.model.account.ModelUser;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -22,11 +22,11 @@ public interface AccountServiceRemote {
     public int register(@RequestParam(value = "phoneNum") String phoneNum);
 
     @RequestMapping(value = "/profile/list", method = RequestMethod.GET)
-    public List<ModelProfile> queryProfileList(@RequestParam(value = "pageNum") int pageNum,
+    public List<ModelUser> queryProfileList(@RequestParam(value = "pageNum") int pageNum,
                                                @RequestParam(value = "pageSize") int pageSize);
 
     @RequestMapping(value = "/profile/with/auth/log", method = RequestMethod.GET)
-    public ModelProfile getProfileWithAuthLog(@RequestParam(value = "userId") long userId);
+    public ModelUser getProfileWithAuthLog(@RequestParam(value = "userId") long userId);
 
     @RequestMapping(value = "/identity/auth", method = RequestMethod.GET)
     public int authIdentity(@RequestParam(value = "userId") long userId, @RequestParam(value = "name") String name,
