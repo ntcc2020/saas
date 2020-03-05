@@ -25,6 +25,7 @@
         <module>salary-service</module>
         <module>salary-web</module>
         <module>project-service</module>
+        <module>project-web</module>
     </modules>
 
     <packaging>pom</packaging>
