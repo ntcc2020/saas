@@ -7,17 +7,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="salary-service" />
+        <module name="salary-web" />
         <module name="cloud-admin-service" />
         <module name="account-service" />
-        <module name="zuul-service" />
-        <module name="zipkin-service" />
         <module name="stats-service" />
-        <module name="service-common" />
-        <module name="config-service" />
-        <module name="eureka-service" />
-        <module name="stats-web" />
         <module name="account-web" />
+        <module name="eureka-service" />
+        <module name="service-common" />
+        <module name="stats-web" />
+        <module name="zipkin-service" />
+        <module name="company-service" />
+        <module name="company-web" />
         <module name="saas-common" />
+        <module name="zuul-service" />
+        <module name="config-service" />
+        <module name="record-service" />
+        <module name="record-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -25,10 +31,16 @@
       <module name="account-web" target="1.8" />
       <module name="account-web (1)" target="1.8" />
       <module name="cloud-admin-service" target="1.8" />
+      <module name="company-service" target="1.8" />
+      <module name="company-web" target="1.8" />
       <module name="config-service" target="1.8" />
       <module name="eureka-service" target="1.8" />
+      <module name="record-service" target="1.8" />
+      <module name="record-web" target="1.8" />
       <module name="saas" target="1.8" />
       <module name="saas-common" target="1.8" />
+      <module name="salary-service" target="1.8" />
+      <module name="salary-web" target="1.8" />
       <module name="service-common" target="1.8" />
       <module name="stats-service" target="1.8" />
       <module name="stats-web" target="1.8" />

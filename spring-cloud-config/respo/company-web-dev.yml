@@ -1,0 +1,42 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8901/eureka/
+
+server:
+  port: 8351
+
+spring:
+  application:
+    name: company-web
+  thymeleaf:
+    mode: LEGACYHTML5
+    encoding: UTF-8
+    cache: false
+    suffix: .html
+  zipkin:
+    base-url: http://localhost:9411
+  boot:
+    admin:
+      client:
+        url: http://localhost:8084
+  redis:
+    host: 47.114.165.181
+    port: 6379
+    timeout: 5000
+    database: 0
+    password: ntcc@2020
+    jedis:
+      pool:
+        max-active: 100
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+
+feign:
+  hystrix:
+    enabled: true
+
+ribbon:
+  eureka:
+    enabled: true

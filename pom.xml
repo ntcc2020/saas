@@ -17,6 +17,13 @@
         <module>zipkin-service</module>
         <module>cloud-admin-service</module>
         <module>saas-common</module>
+        <module>service-common</module>
+        <module>company-service</module>
+        <module>company-web</module>
+        <module>record-service</module>
+        <module>record-web</module>
+        <module>salary-service</module>
+        <module>salary-web</module>
     </modules>
 
     <packaging>pom</packaging>
