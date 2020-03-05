@@ -24,6 +24,7 @@
         <module>record-web</module>
         <module>salary-service</module>
         <module>salary-web</module>
+        <module>project-service</module>
     </modules>
 
     <packaging>pom</packaging>
