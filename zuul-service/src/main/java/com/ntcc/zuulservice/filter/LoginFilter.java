@@ -39,16 +39,16 @@ public class LoginFilter extends ZuulFilter {
         HttpServletRequest request = currentContext.getRequest();
         String servletPath = request.getServletPath();
         String token = request.getParameter("token");
-        if (!servletPath.startsWith("/api/account/register") && token == null) {
-            currentContext.setSendZuulResponse(false);
-            currentContext.setResponseStatusCode(401);
-            try {
-                currentContext.getResponse().setContentType("text/html;charset=UTF-8");
-                currentContext.getResponse().getWriter().write("非法请求");
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
+//        if (!servletPath.startsWith("/api/account/register") && token == null) {
+//            currentContext.setSendZuulResponse(false);
+//            currentContext.setResponseStatusCode(401);
+//            try {
+//                currentContext.getResponse().setContentType("text/html;charset=UTF-8");
+//                currentContext.getResponse().getWriter().write("非法请求");
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//        }
 
         return null;
     }
