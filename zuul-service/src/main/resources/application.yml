@@ -30,3 +30,6 @@ zuul:
     api-user:
       path: /api/user/**
       serviceId: user-web
+    api-salary:
+      path: /api/salary/**
+      serviceId: salary-web
