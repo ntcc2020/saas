@@ -397,3 +397,6 @@ service-common/target/classes/mapper/UserRecordLogMapper.xml
 service-common/target/classes/mapper/UserRecordMapper.xml
 service-common/target/classes/mapper/UserSalaryTplMapper.xml
 service-common/target/classes/tk/mybatis/MyMapper.class
+/eureka-service/target
+/saas-common/target
+/service-common/target
