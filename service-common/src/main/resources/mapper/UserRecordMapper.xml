@@ -5,20 +5,20 @@
     <!--
       WARNING - @mbg.generated
     -->
-    <id column="id" jdbcType="VARCHAR" property="id" />
-    <result column="project_id" jdbcType="VARCHAR" property="projectId" />
-    <result column="user_id" jdbcType="VARCHAR" property="userId" />
-    <result column="user_type" jdbcType="VARCHAR" property="userType" />
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="project_id" jdbcType="BIGINT" property="projectId" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="user_type" jdbcType="TINYINT" property="userType" />
     <result column="record_date" jdbcType="DATE" property="recordDate" />
-    <result column="record_type" jdbcType="VARCHAR" property="recordType" />
+    <result column="record_type" jdbcType="TINYINT" property="recordType" />
     <result column="start_time" jdbcType="TIMESTAMP" property="startTime" />
     <result column="end_time" jdbcType="TIMESTAMP" property="endTime" />
-    <result column="record_result" jdbcType="VARCHAR" property="recordResult" />
-    <result column="status" jdbcType="VARCHAR" property="status" />
-    <result column="is_delete" jdbcType="INTEGER" property="isDelete" />
-    <result column="created_by" jdbcType="VARCHAR" property="createdBy" />
+    <result column="record_result" jdbcType="TINYINT" property="recordResult" />
+    <result column="status" jdbcType="TINYINT" property="status" />
+    <result column="is_delete" jdbcType="TINYINT" property="isDelete" />
+    <result column="created_by" jdbcType="BIGINT" property="createdBy" />
     <result column="created_time" jdbcType="TIMESTAMP" property="createdTime" />
-    <result column="updated_by" jdbcType="VARCHAR" property="updatedBy" />
+    <result column="updated_by" jdbcType="BIGINT" property="updatedBy" />
     <result column="updated_time" jdbcType="TIMESTAMP" property="updatedTime" />
   </resultMap>
 </mapper>

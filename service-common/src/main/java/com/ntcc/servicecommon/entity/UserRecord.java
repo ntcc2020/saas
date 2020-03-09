@@ -7,25 +7,28 @@ import javax.persistence.*;
 public class UserRecord {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
+    private Long id;
 
     @Column(name = "project_id")
-    private String projectId;
+    private Long projectId;
 
     @Column(name = "user_id")
-    private String userId;
+    private Long userId;
 
     /**
      * 自有、劳务、专业
      */
     @Column(name = "user_type")
-    private String userType;
+    private Byte userType;
 
     @Column(name = "record_date")
     private Date recordDate;
 
+    /**
+     * 1正常班，2加班
+     */
     @Column(name = "record_type")
-    private String recordType;
+    private Byte recordType;
 
     @Column(name = "start_time")
     private Date startTime;
@@ -33,28 +36,31 @@ public class UserRecord {
     @Column(name = "end_time")
     private Date endTime;
 
+    /**
+     * 1正常、2异常
+     */
     @Column(name = "record_result")
-    private String recordResult;
+    private Byte recordResult;
 
     /**
-     * 数据状态
+     * 数据状态 0正常
      */
-    private String status;
+    private Byte status;
 
     /**
      * 0未删除，1已删除
      */
     @Column(name = "is_delete")
-    private Integer isDelete;
+    private Byte isDelete;
 
     @Column(name = "created_by")
-    private String createdBy;
+    private Long createdBy;
 
     @Column(name = "created_time")
     private Date createdTime;
 
     @Column(name = "updated_by")
-    private String updatedBy;
+    private Long updatedBy;
 
     @Column(name = "updated_time")
     private Date updatedTime;
@@ -62,42 +68,42 @@ public class UserRecord {
     /**
      * @return id
      */
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
     /**
      * @param id
      */
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
     /**
      * @return project_id
      */
-    public String getProjectId() {
+    public Long getProjectId() {
         return projectId;
     }
 
     /**
      * @param projectId
      */
-    public void setProjectId(String projectId) {
+    public void setProjectId(Long projectId) {
         this.projectId = projectId;
     }
 
     /**
      * @return user_id
      */
-    public String getUserId() {
+    public Long getUserId() {
         return userId;
     }
 
     /**
      * @param userId
      */
-    public void setUserId(String userId) {
+    public void setUserId(Long userId) {
         this.userId = userId;
     }
 
@@ -106,7 +112,7 @@ public class UserRecord {
      *
      * @return user_type - 自有、劳务、专业
      */
-    public String getUserType() {
+    public Byte getUserType() {
         return userType;
     }
 
@@ -115,7 +121,7 @@ public class UserRecord {
      *
      * @param userType 自有、劳务、专业
      */
-    public void setUserType(String userType) {
+    public void setUserType(Byte userType) {
         this.userType = userType;
     }
 
@@ -134,16 +140,20 @@ public class UserRecord {
     }
 
     /**
-     * @return record_type
+     * 获取1正常班，2加班
+     *
+     * @return record_type - 1正常班，2加班
      */
-    public String getRecordType() {
+    public Byte getRecordType() {
         return recordType;
     }
 
     /**
-     * @param recordType
+     * 设置1正常班，2加班
+     *
+     * @param recordType 1正常班，2加班
      */
-    public void setRecordType(String recordType) {
+    public void setRecordType(Byte recordType) {
         this.recordType = recordType;
     }
 
@@ -176,34 +186,38 @@ public class UserRecord {
     }
 
     /**
-     * @return record_result
+     * 获取1正常、2异常
+     *
+     * @return record_result - 1正常、2异常
      */
-    public String getRecordResult() {
+    public Byte getRecordResult() {
         return recordResult;
     }
 
     /**
-     * @param recordResult
+     * 设置1正常、2异常
+     *
+     * @param recordResult 1正常、2异常
      */
-    public void setRecordResult(String recordResult) {
+    public void setRecordResult(Byte recordResult) {
         this.recordResult = recordResult;
     }
 
     /**
-     * 获取数据状态
+     * 获取数据状态 0正常
      *
-     * @return status - 数据状态
+     * @return status - 数据状态 0正常
      */
-    public String getStatus() {
+    public Byte getStatus() {
         return status;
     }
 
     /**
-     * 设置数据状态
+     * 设置数据状态 0正常
      *
-     * @param status 数据状态
+     * @param status 数据状态 0正常
      */
-    public void setStatus(String status) {
+    public void setStatus(Byte status) {
         this.status = status;
     }
 
@@ -212,7 +226,7 @@ public class UserRecord {
      *
      * @return is_delete - 0未删除，1已删除
      */
-    public Integer getIsDelete() {
+    public Byte getIsDelete() {
         return isDelete;
     }
 
@@ -221,21 +235,21 @@ public class UserRecord {
      *
      * @param isDelete 0未删除，1已删除
      */
-    public void setIsDelete(Integer isDelete) {
+    public void setIsDelete(Byte isDelete) {
         this.isDelete = isDelete;
     }
 
     /**
      * @return created_by
      */
-    public String getCreatedBy() {
+    public Long getCreatedBy() {
         return createdBy;
     }
 
     /**
      * @param createdBy
      */
-    public void setCreatedBy(String createdBy) {
+    public void setCreatedBy(Long createdBy) {
         this.createdBy = createdBy;
     }
 
@@ -256,14 +270,14 @@ public class UserRecord {
     /**
      * @return updated_by
      */
-    public String getUpdatedBy() {
+    public Long getUpdatedBy() {
         return updatedBy;
     }
 
     /**
      * @param updatedBy
      */
-    public void setUpdatedBy(String updatedBy) {
+    public void setUpdatedBy(Long updatedBy) {
         this.updatedBy = updatedBy;
     }
 

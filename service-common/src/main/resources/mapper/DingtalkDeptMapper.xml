@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ntcc.servicecommon.dao.DingtalkDeptMapper">
+  <resultMap id="BaseResultMap" type="com.ntcc.servicecommon.entity.DingtalkDept">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="dept_name" jdbcType="VARCHAR" property="deptName" />
+    <result column="parentid" jdbcType="BIGINT" property="parentid" />
+    <result column="pos" jdbcType="TINYINT" property="pos" />
+    <result column="createDeptGroup" jdbcType="BIT" property="createdeptgroup" />
+    <result column="autoAddUser" jdbcType="BIT" property="autoadduser" />
+    <result column="deptManagerUseridList" jdbcType="LONGVARCHAR" property="deptmanageruseridlist" />
+  </resultMap>
+</mapper>

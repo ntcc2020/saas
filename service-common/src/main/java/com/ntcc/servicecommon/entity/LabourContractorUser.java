@@ -2,6 +2,7 @@ package com.ntcc.servicecommon.entity;
 
 import javax.persistence.*;
 
+@Table(name = "labour_contractor_user")
 public class LabourContractorUser {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

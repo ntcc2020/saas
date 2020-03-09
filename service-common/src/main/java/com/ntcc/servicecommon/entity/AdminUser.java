@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class AdminUser {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
+    private Long id;
 
     @Column(name = "user_name")
     private String userName;
@@ -15,22 +15,25 @@ public class AdminUser {
     @Column(name = "user_pass")
     private String userPass;
 
-    private String status;
+    /**
+     * 0启用，1停用
+     */
+    private Byte status;
 
     /**
      * 0未删除，1已删除
      */
     @Column(name = "is_delete")
-    private Integer isDelete;
+    private Byte isDelete;
 
     @Column(name = "created_by")
-    private String createdBy;
+    private Long createdBy;
 
     @Column(name = "created_time")
     private Date createdTime;
 
     @Column(name = "updated_by")
-    private String updatedBy;
+    private Long updatedBy;
 
     @Column(name = "updated_time")
     private Date updatedTime;
@@ -38,14 +41,14 @@ public class AdminUser {
     /**
      * @return id
      */
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
     /**
      * @param id
      */
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -78,16 +81,20 @@ public class AdminUser {
     }
 
     /**
-     * @return status
+     * 获取0启用，1停用
+     *
+     * @return status - 0启用，1停用
      */
-    public String getStatus() {
+    public Byte getStatus() {
         return status;
     }
 
     /**
-     * @param status
+     * 设置0启用，1停用
+     *
+     * @param status 0启用，1停用
      */
-    public void setStatus(String status) {
+    public void setStatus(Byte status) {
         this.status = status;
     }
 
@@ -96,7 +103,7 @@ public class AdminUser {
      *
      * @return is_delete - 0未删除，1已删除
      */
-    public Integer getIsDelete() {
+    public Byte getIsDelete() {
         return isDelete;
     }
 
@@ -105,21 +112,21 @@ public class AdminUser {
      *
      * @param isDelete 0未删除，1已删除
      */
-    public void setIsDelete(Integer isDelete) {
+    public void setIsDelete(Byte isDelete) {
         this.isDelete = isDelete;
     }
 
     /**
      * @return created_by
      */
-    public String getCreatedBy() {
+    public Long getCreatedBy() {
         return createdBy;
     }
 
     /**
      * @param createdBy
      */
-    public void setCreatedBy(String createdBy) {
+    public void setCreatedBy(Long createdBy) {
         this.createdBy = createdBy;
     }
 
@@ -140,14 +147,14 @@ public class AdminUser {
     /**
      * @return updated_by
      */
-    public String getUpdatedBy() {
+    public Long getUpdatedBy() {
         return updatedBy;
     }
 
     /**
      * @param updatedBy
      */
-    public void setUpdatedBy(String updatedBy) {
+    public void setUpdatedBy(Long updatedBy) {
         this.updatedBy = updatedBy;
     }
 
