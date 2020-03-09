@@ -13,4 +13,10 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class CompanyServiceHystrix implements CompanyServiceRemote {
+
+	@Override
+	public int getCompanyInfoById(String id) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }

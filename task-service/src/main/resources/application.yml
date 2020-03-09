@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8888
+      name: task-service
+      label: master
+      profile: dev
+
+# 下面的配置等同于 TaskConfig
+#spring:
+#  task:
+#    scheduling:
+#      pool:
+#        size: 20
+#      thread-name-prefix: Job-Thread-

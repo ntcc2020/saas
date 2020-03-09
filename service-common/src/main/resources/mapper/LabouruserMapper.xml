@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.ntcc.servicecommon.dao.LabouruserMapper">
-  <resultMap id="BaseResultMap" type="com.ntcc.servicecommon.entity.Labouruser">
+<mapper namespace="com.ntcc.servicecommon.dao.LabourUserMapper">
+  <resultMap id="BaseResultMap" type="com.ntcc.servicecommon.entity.LabourUser">
     <!--
       WARNING - @mbg.generated
     -->

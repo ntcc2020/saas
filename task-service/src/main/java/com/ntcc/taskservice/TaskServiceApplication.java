@@ -1,4 +1,4 @@
-package com.ntcc.companyservice;
+package com.ntcc.taskservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -16,10 +16,10 @@ import tk.mybatis.spring.annotation.MapperScan;
 @SpringBootApplication
 @EnableEurekaClient
 @MapperScan(basePackages = "com.ntcc.servicecommon.dao")
-public class CompanyServiceApplication {
+public class TaskServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CompanyServiceApplication.class, args);
+        SpringApplication.run(TaskServiceApplication.class, args);
     }
 
 }

@@ -2,6 +2,9 @@ package com.ntcc.companyweb.service;
 
 import com.ntcc.companyweb.service.hystrix.CompanyServiceHystrix;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * CompanyServiceRemote
@@ -12,4 +15,6 @@ import org.springframework.cloud.openfeign.FeignClient;
  */
 @FeignClient(value = "company-service", fallback = CompanyServiceHystrix.class)
 public interface CompanyServiceRemote {
+    @RequestMapping(value = "/get", method = RequestMethod.GET)
+    public int getCompanyInfoById(@RequestParam(value = "id") String id);
 }

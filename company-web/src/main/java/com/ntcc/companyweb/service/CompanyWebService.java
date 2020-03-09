@@ -23,4 +23,5 @@ import java.io.Serializable;
 public class CompanyWebService implements Serializable {
     @Autowired
     private CompanyServiceRemote companyServiceRemote;
+
 }

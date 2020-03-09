@@ -1,4 +1,4 @@
-package com.ntcc.companyservice;
+package com.ntcc.taskservice;
 
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;

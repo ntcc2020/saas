@@ -2,7 +2,7 @@ package com.ntcc.servicecommon.entity;
 
 import javax.persistence.*;
 
-public class Labourcontractoruser {
+public class LabourContractorUser {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

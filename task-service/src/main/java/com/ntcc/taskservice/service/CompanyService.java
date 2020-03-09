@@ -1,4 +1,4 @@
-package com.ntcc.companyservice.service;
+package com.ntcc.taskservice.service;
 
 /**
  * CompanyService
@@ -9,4 +9,5 @@ package com.ntcc.companyservice.service;
  */
 
 public interface CompanyService {
+    public int getCompanyInfoById(int id);
 }
